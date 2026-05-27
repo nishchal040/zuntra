@@ -1,0 +1,310 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+@font-face {
+  font-family: gilroy;
+  src: url(/public/font/Gilroy-Light.otf);
+}
+
+.hero{
+  width: 100%;
+  height: 100vh;
+}
+.hero video{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  object-fit: cover;
+
+  
+}
+.hero-content {
+  position: relative;
+  z-index: 3;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.hero-content h1{
+  font-family: denton;
+    font-size: 114px;
+    font-weight: 700;
+    line-height: 100px;
+}
+.hero-content p{
+    font-family: gilory;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+}
+
+
+.story{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+.story-content{
+    width: 45%;
+    display: flex;
+    margin: 200px 0px;  
+    flex-direction: column;
+  }
+.story-content p{
+    font-family: gilroy;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 6px;
+    text-align: left;
+    color: rgb(255, 255, 255);;
+}
+
+.story-content .spans{
+      font-family: denton;
+    font-size: 70px;
+    font-weight: 300;
+    line-height: 100px;
+    letter-spacing: 1.26px;
+    color: rgb(51, 51, 51);
+    text-align: left;
+}
+
+
+.features{
+      max-width: 100vw;
+    height: fit-content;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding-left: 96px;
+    overflow: hidden;
+}
+.features h1{
+  font-family: denton;
+    font-size: 5.625rem;
+    font-weight: 700;
+    line-height: 5.75rem;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+}
+.features p{
+      width: 100%;
+    font-family: gilroy;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3rem;
+    letter-spacing: -0.075rem;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    margin-top: 30px;
+}
+.cards{
+      display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 20px;
+    overflow: auto hidden;
+    padding-right: 15px;
+    scrollbar-width: none;
+    
+}
+.cards-container{
+  padding-top: 30px;
+    padding-bottom: 50px;
+    margin-top: 50px;
+
+}
+.cards::-webkit-scrollbar{
+  display: none;
+}
+.card img{
+  height: 30px;
+}
+.card{
+  height: 75vh;
+    padding: 60px 60px 0px 40px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-image: url(https://web-images.credcdn.in/v2/_next/assets/images/landing/desktop/scan-n-pay.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex:0 0 15%;
+}
+.card span{
+  text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: gilroy-medium;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    margin-top: 20px;
+}
+.security{
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+    display: flex;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.security-container p{
+      font-family: gilroy;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 6px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    padding-bottom: 60px;
+}
+.security-container span {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 82px;
+  letter-spacing: 0.69px;
+  text-align: center;
+  cursor: default;
+  color: rgba(255, 255, 255, 0.15);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: radial-gradient(
+    circle closest-side,
+    rgb(255, 255, 255) 50%,
+    rgb(255, 255, 255) 60%,
+    rgba(255, 255, 255, 0.4) 80%,
+    transparent 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 450px 450px;
+  background-position: 50% 50%; /* overridden by inline style on hover */
+}
+.rating{
+  display: flex;
+  padding: 50px 150px;
+  justify-content: space-between;
+ background: linear-gradient(90deg, rgb(0, 0, 0), rgb(19, 19, 19), rgb(0, 0, 0));
+}
+.rating h1{
+      font-family: denton;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 95px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+}
+.rating p{
+      font-family: gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 4.5px;
+    text-transform: uppercase;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.9);
+}
+.stars{
+  display: flex;
+}
+.app{
+  color: white;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+}
+.app #given{
+  font-size: 95px;
+    font-weight: 700;
+    line-height: 88px;
+    letter-spacing: -3.1px;
+    padding-top: 30px;
+    text-align: center;
+}
+.app #overall{
+      font-size: 45px;
+    font-weight: 700;
+    line-height: 88px;
+    letter-spacing: -1px;
+    opacity: 0.6;
+}
+.app p{
+  font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 6px;
+    text-align: center;
+    opacity: 0.5;
+}
+.play{
+  color: white;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+}
+.play #given{
+  font-size: 95px;
+    font-weight: 700;
+    line-height: 88px;
+    letter-spacing: -3.1px;
+    padding-top: 30px;
+    text-align: center;
+}
+.play #overall{
+      font-size: 45px;
+    font-weight: 700;
+    line-height: 88px;
+    letter-spacing: -1px;
+    opacity: 0.6;
+}
+.play p{
+  font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 6px;
+    text-align: center;
+    opacity: 0.5;
+}
