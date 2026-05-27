@@ -2,24 +2,29 @@ import React from "react";
 
 const featuresData = [
   {
-    img: "https://web-images.credcdn.in/v2/_next/assets/images/landing/desktop/snp-logo-final.png",
-    title: "scan & pay \n any UPI QR",
+    logo: "https://web-images.credcdn.in/v2/_next/assets/images/landing/desktop/snp-logo-final.png",
+    bg: "https://web-images.credcdn.in/v2/_next/assets/images/landing/desktop/scan-n-pay.png",
+    title: "scan & pay\nany UPI QR",
   },
   {
-    img: "https://web-images.credcdn.in/v2/_next/assets/images/landing/desktop/rupay-logo-final.png",
-    title: "UPI payments. \n on credit.",
+    logo: "https://web-images.credcdn.in/v2/_next/assets/images/landing/desktop/rupay-logo-final.png",
+    bg: "https://web-images.credcdn.in/v2/_next/assets/images/landing/desktop/cc-on-upi.png",
+    title: "UPI payments.\non credit.",
   },
   {
-    img: "https://web-images.credcdn.in/v2/_next/assets/images/landing/desktop/tnp-logo-final.png",
-    title: "tap your phone. \n pay on credit.",
+    logo: "https://web-images.credcdn.in/v2/_next/assets/images/landing/desktop/tnp-logo-final.png",
+    bg: "https://web-images.credcdn.in/v2/_next/assets/images/landing/desktop/tap-n-pay.png",
+    title: "tap your phone.\npay on credit.",
   },
   {
-    img: "https://web-images.credcdn.in/v2/_next/assets/images/landing/desktop/p2p-logo-final.png",
-    title: "send money to \n any UPI app",
+    logo: "https://web-images.credcdn.in/v2/_next/assets/images/landing/desktop/p2p-logo-final.png",
+    bg: "https://web-images.credcdn.in/v2/_next/assets/images/landing/desktop/p2p.png",
+    title: "send money to\nany UPI app",
   },
   {
-    img: "https://web-images.credcdn.in/v2/_next/assets/images/landing/desktop/garage-logo-final.png",
-    title: "manage your \n cars' vitals",
+    logo: "https://web-images.credcdn.in/v2/_next/assets/images/landing/desktop/garage-logo-final.png",
+    bg: "https://web-images.credcdn.in/v2/_next/assets/images/landing/desktop/garage.png",
+    title: "manage your\ncars' vitals",
   },
 ];
 
@@ -30,7 +35,7 @@ function Features() {
     <div className="cards-container">
       <div className="cards">
         {featuresData.map((item, index) => (
-          <div className="card" key={index}>
+          <div className="card" key={index} style={{backgroundImage: `url(${item.bg})`,}}>
             <img src={item.img} alt="" />
 
             <p>
